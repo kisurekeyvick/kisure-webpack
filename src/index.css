@@ -1,6 +1,5 @@
 @import './a.css';
-
 body {
-    background: pink;
-    transform: rotate(60deg);
+    background: palevioletred;
+    transform: rotate(45deg);
 }

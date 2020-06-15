@@ -1,6 +1,20 @@
-// console.log('hello kisure, this is your first webpack project');
+let func = require('./a.js');
 
-// let str = require('./a.js');
-// console.log(str);
+console.log(func);
 require('./index.css');
-require('./index.scss');
+require('./index.less');
+// require('./index.scss');
+
+@decorateFuncA
+class A {
+    constructor(name) {
+        this.name = name;
+    }
+}
+
+let a = new A('kisure');
+console.log(a.name);
+
+function decorateFuncA(classItem) {
+    console.log('classItem', classItem);
+}

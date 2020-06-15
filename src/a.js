@@ -1,1 +1,3 @@
-module.exports = 'hello kisure this is me';
+function run() {
+    console.log('nice fish');
+}
